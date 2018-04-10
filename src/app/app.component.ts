@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  Tabname : string = "Recipe";
+  OnHeaderClicked(name:string){
+    console.log(`clicked : ${name}`)
+    this.Tabname = name;
+  }
 }
